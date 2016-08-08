@@ -14,8 +14,7 @@ ENV PENTAHO_JAVA_HOME /usr/lib/jvm/java-1.7.0-openjdk-amd64
 ENV JAVA_HOME /usr/lib/jvm/java-1.7.0-openjdk-amd64 
 
 # Install Dependences 
-RUN apt-get update; 
-apt-get install zip -y; apt-get install wget unzip git -y; apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*; 
+RUN apt-get update; apt-get install zip -y; apt-get install wget unzip git -y; apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*; 
 RUN mkdir ${PENTAHO_HOME}; 
 
 # Download Pentaho BI Server 
