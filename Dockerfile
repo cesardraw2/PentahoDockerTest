@@ -26,4 +26,5 @@ RUN useradd -s /bin/bash -d ${PENTAHO_HOME} pentaho; chown -R pentaho:pentaho ${
 USER pentaho 
 WORKDIR /opt/pentaho 
 
-EXPOSE 8080 CMD ["sh", "/opt/pentaho/biserver-ce/start-pentaho.sh"]
+EXPOSE 8080 
+CMD ["sh", "/opt/pentaho/biserver-ce/start-pentaho.sh"]
